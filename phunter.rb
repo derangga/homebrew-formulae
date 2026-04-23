@@ -5,21 +5,21 @@
 class Phunter < Formula
   desc "Terminal UI for hunting and killing processes listening on TCP ports"
   homepage "https://github.com/derangga/phunter"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/derangga/phunter/releases/download/v0.2.3/phunter_darwin_amd64.tar.gz"
-      sha256 "78d73a186703f0ac725cea21caf7941829afb51e225b96fe4e6cd07b0cc59b2c"
+      url "https://github.com/derangga/phunter/releases/download/v0.3.0/phunter_darwin_amd64.tar.gz"
+      sha256 "13894839250a8a723cb4673865b80ed94d0258b032652a856c5c2be2e3c52171"
 
       define_method(:install) do
         bin.install "phunter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/derangga/phunter/releases/download/v0.2.3/phunter_darwin_arm64.tar.gz"
-      sha256 "950ef3646db1b5528a853214dace3ef0a18e653d408fbec06e0f1be58ab94e6e"
+      url "https://github.com/derangga/phunter/releases/download/v0.3.0/phunter_darwin_arm64.tar.gz"
+      sha256 "36079dd7b217788def796a27b5fd38e86feaba1de8713e8945ade9e4d1ffb147"
 
       define_method(:install) do
         bin.install "phunter"
@@ -29,15 +29,15 @@ class Phunter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/derangga/phunter/releases/download/v0.2.3/phunter_linux_amd64.tar.gz"
-      sha256 "7a614058bb89da2366b964c60a0fb8688af04d866929d22b0f9f8f896b1fb58a"
+      url "https://github.com/derangga/phunter/releases/download/v0.3.0/phunter_linux_amd64.tar.gz"
+      sha256 "a5fabaa115cdabf94972c0188ce6995eca1d99e644b0272f179daa7573e280cb"
       define_method(:install) do
         bin.install "phunter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/derangga/phunter/releases/download/v0.2.3/phunter_linux_arm64.tar.gz"
-      sha256 "93df052a23f57eac75fbb8a2ea7f3f99fe0034a35e68040533b4c861ffae30ee"
+      url "https://github.com/derangga/phunter/releases/download/v0.3.0/phunter_linux_arm64.tar.gz"
+      sha256 "f6601bc20b56cb23a2410d768814ac200357018a5f87e92f9ee17c029afda994"
       define_method(:install) do
         bin.install "phunter"
       end
