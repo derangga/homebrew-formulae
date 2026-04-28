@@ -3,7 +3,7 @@
 
 class Aerogesture < Formula
   desc "CLI daemon for trackpad swipe gestures to switch AeroSpace workspaces"
-  homepage "https://github.com/derangga/aerospacegesture"
+  homepage "https://github.com/derangga/aerogesture"
   version "0.1.0"
   license "MIT"
 
@@ -11,12 +11,12 @@ class Aerogesture < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/derangga/aerospacegesture/releases/download/v0.1.0/aerogesture_0.1.0_macos_arm64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/derangga/aerogesture/releases/download/v0.1.0/aerogesture_0.1.0_macos_arm64.tar.gz"
+      sha256 "ea88a067e947819d530432df6661e0d354d40c3083bfac1c1f8f8e1ded762463"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/derangga/aerospacegesture/releases/download/v0.1.0/aerogesture_0.1.0_macos_x86_64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/derangga/aerogesture/releases/download/v0.1.0/aerogesture_0.1.0_macos_x86_64.tar.gz"
+      sha256 "ef521cb9f7868aabf409ea91f46fa3b8f853278d9e9bfc609c4fd69db38aa17d"
     end
   end
 
